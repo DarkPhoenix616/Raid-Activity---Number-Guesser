@@ -1,4 +1,5 @@
 let lives = 3;
+const HB = document.getElementById('health');
 
 document.getElementById('guess-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -28,6 +29,7 @@ function checkGuess() {
         messageElement.textContent = "Wrong! You got hit!";
         messageElement.style.color = "red";
         gameStatus.textContent="You have been Shot!!";
+        HB.style.height = (HB.offsetHeight-100) + 'px';
 
         if (lives === 0) {
             messageElement.textContent = "Game Over!";

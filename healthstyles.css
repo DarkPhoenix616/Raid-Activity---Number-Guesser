@@ -1,0 +1,30 @@
+.HealthUI {
+    position: absolute; 
+    left: 7%; 
+    top: 25%; 
+    overflow: hidden;
+    width: 30px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; 
+    z-index: 1;
+}
+
+.HealthBar {
+    height: 100%;
+    width: 100%;
+    background-color: greenyellow;
+    transition: height 0.3s ease;
+}
+
+.Healthlogo {
+    position: absolute;
+    top: 65%;    
+    left: 8.2%;    
+    transform: translate(-50%, -50%); 
+    width: 60px;     
+    height: 60px;  
+    opacity: 1;
+    z-index: 2;
+}
+

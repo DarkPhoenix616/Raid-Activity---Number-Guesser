@@ -3,6 +3,7 @@
   <head>
     <title>GuessDodger</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="healthstyles.css">
     <script src="script.js"></script>
   </head>
 
@@ -10,11 +11,16 @@
     <div class="Images">
       <img src="./public/space.jpg" class="Space" draggable="false" />
       <div id="ImageContainer" draggable="false">
-        <img src="./public/title.png" class="Title Resize" />
+        <img src="./public/title1.png" class="Title Resize" />
         <img src="./public/sky.jpg" class="Sky Resize" />
         <img src="./public/ground.webp" class="Ground Resize" />
+        <img src="./public/heart.png" class="Healthlogo">
       </div>
     </div>
+    <div class = "HealthUI">
+      <div class = "HealthBar" id = "health"></div>
+      <script src = "healthlogic.js"></script>
+  </div>
     <div class="game-container">
       <div id="game-status">
         <form id="guess-form">
