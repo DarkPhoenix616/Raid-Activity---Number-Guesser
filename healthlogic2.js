@@ -1,9 +1,9 @@
-let currentHealth = 100;
+let currentHealth2 = 100;
 const maxHealth = 100;
 
-function updateHealthBar() {
-    const healthPercentage = (currentHealth / maxHealth) * 100;
-    const healthBar = document.getElementById('health');
+function updateHealthBar2() {
+    const healthPercentage = (currentHealth2 / maxHealth) * 100;
+    const healthBar = document.getElementById('health2');
 
     healthBar.style.height = (healthPercentage) + '%';
 
@@ -17,20 +17,20 @@ function updateHealthBar() {
 }
 
 // Initial update to set the health bar
-updateHealthBar();
+updateHealthBar2();
 
 // Example function to decrease health
-function decreaseHealth(amount) {
-    currentHealth -= amount;
-    if (currentHealth < 0) {
-        currentHealth = 0;
+function decreaseHealth2(amount) {
+    currentHealth2 -= amount;
+    if (currentHealth2 < 0) {
+        currentHealth2 = 0;
     }
-    updateHealthBar();
+    updateHealthBar2();
 }
 
-function resetHealth(){
-    currentHealth = 100;
-    updateHealthBar();
+function resetHealth2(){
+    currentHealth2 = 100;
+    updateHealthBar2();
 }
 
 // Example usage: Decrease health by 20

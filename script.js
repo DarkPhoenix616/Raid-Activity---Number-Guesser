@@ -1,5 +1,6 @@
 let lives = 3;
 const HB = document.getElementById('health');
+const HB2 = document.getElementById('health2');
 
 document.getElementById('guess-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -19,19 +20,19 @@ function checkGuess() {
     }
 
     if (userGuess === correctNumber) {
-        messageElement.textContent = "Correct! You've dodged the bullet! You have won the game";
+        messageElement.textContent = "Correct! You've dodged the bullet!";
         messageElement.style.color = "green";
-        gameStatus.textContent="You have won the game!!";
-        resetGame();
+        //gameStatus.textContent="You have won the game!!";
+        decreaseHealth2(20);
     } else {
         lives--;
         livesElement.textContent = lives;
         messageElement.textContent = "Wrong! You got hit!";
         messageElement.style.color = "red";
         gameStatus.textContent="You have been Shot!!";
-        HB.style.height = (HB.offsetHeight-100) + 'px';
+        decreaseHealth(20);
 
-        if (lives === 0) {
+        if (HB.style.height < 0 +'px' || HB2.style.height < 0 + 'px') {
             messageElement.textContent = "Game Over!";
             gameStatus.textContent="You have been Killed";
 
@@ -47,4 +48,6 @@ function resetGame() {
     lives = 3;
     document.getElementById('lives').textContent = lives;
     document.getElementById('guess-input').value = '';
+    resetHealth();
+    resetHealth2();
 }
