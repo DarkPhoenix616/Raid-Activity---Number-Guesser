@@ -1,3 +1,19 @@
+const audio = document.getElementById('BackgroundAudio');
+const muteButton = document.getElementById('MuteButton');
+
+muteButton.addEventListener('click', function() {
+    if (audio.muted) {
+        audio.muted = false;
+        audio.play();
+        muteButton.textContent = 'Mute';
+    } else {
+        audio.muted = true;
+        audio.pause();
+        muteButton.textContent = 'Unmute';
+    }
+    localStorage.setItem('audioMuted', audio.muted);
+});
+
 let lives = 3;
 
 document.getElementById('guess-form').addEventListener('submit', function(event) {
