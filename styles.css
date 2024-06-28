@@ -1,49 +1,92 @@
-body, html {
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('./public/space.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Images {
     height: 100%;
+    width: auto;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
 }
-
-.ImageContainer {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
-}
 .Title {
     position: absolute;
-    top: 7%;    
+    top: 6%;    
     left: 50%;    
     transform: translate(-50%, -50%); 
-    width: 50%;     
+    width: 30%;     
     height: auto;  
     opacity: 1;
 }
 
 .Sky {
     position: absolute;
-    top: 40%;    
+    top: 35%;    
     left: 50%;    
     transform: translate(-50%, -50%); 
-    width: 70%;     
+    width: 60%;     
     height: auto;  
     opacity: 1;
 }
 
 .Ground {
     position: absolute;
-    top: 70%;    
+    top: 60%;    
     left: 50%;    
     transform: translate(-50%, -50%); 
-    width: 70%;     
+    width: 60%;     
     height: 30%;  
     opacity: 1;
 }
+.game-container {
+    position: absolute;
+    text-align: center;
+    top:85%;
+    left:50%;
+    justify-content: center;
+    transform: translate(-50%, -50%); 
+    background-color: violet;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    opacity: 1;
+    
+}
 
-.Space {
-    width: 100%;
-    height: auto;
+input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: Black;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#lives {
+    font-weight: bold;
 }
