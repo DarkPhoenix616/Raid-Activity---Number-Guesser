@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>GuessDodger</title>
-<link rel = "stylesheet" href = "styles.css">
-
+  <title>GuessDodger</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="Images">
+    <img src="./public/space.jpg" class="Space" draggable="false" />
+    <div id="ImageContainer" draggable="false">
+      <img src="./public/title.png" class="Title Resize" />
+      <img src="./public/sky.jpg" class="Sky Resize" />
+      <img src="./public/ground.webp" class="Ground Resize" />
+    </div>
+  </div>
 
-    <div class="Images">
-        <img src="./public/space.jpg" class="Space" draggable="false" />
-        <div id="ImageContainer" draggable="false">
-          <img src="./public/title.png" class="Title Resize" />
-          <img src="./public/sky.jpg" class="Sky Resize" />
-          <img src="./public/ground.webp" class="Ground Resize" />
-        </div>
-      </div>
-
-<div class="MainMenu">
-    <!-- <h1>Number Guessing Game</h1> -->
+  <div class="MainMenu">
     <button id="StartGame">Start Game</button>
-    <button id="MuteButton">Mute</button>
+  </div>
 
-</div>
+  <audio id="BackgroundAudio" loop>
+    <source src="./public/bgaudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-<audio id="BackgroundAudio" loop>
-    <source src="" type="">
-</audio>
-<script src="work.js"></script>
-
+  <script src="work.js"></script>
 </body>
 </html>
+

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="healthstyles.css">
     <link rel="stylesheet" href="playerstyles.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <script src="healthlogic.js"></script>
     <script src="healthlogic2.js"></script>
   </head>
@@ -51,5 +51,16 @@
         <p>Lives Remaining: ❤️ <span id="lives">5</span></p>
       </div>
     </div>
+    <div class="MainMenu">
+      <button id="MuteButton">Unmute</button>
+    </div>
+  
+    <audio id="BackgroundAudio" loop>
+      <source src="./public/bgaudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+  
+  
   </body>
 </html>
