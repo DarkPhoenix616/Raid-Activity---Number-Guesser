@@ -105,7 +105,7 @@ button:hover {
     color: white;
     position: fixed;
     bottom: 190px;
-    right: 650px;
+    right: 800px;
 }
 
 #StartGame:hover {
@@ -121,4 +121,7 @@ button:hover {
 
 #MuteButton:hover {
     background-color: #7e7f80b9;
+}
+.Main_body{
+    justify-content: center;
 }
