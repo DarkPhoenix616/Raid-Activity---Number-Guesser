@@ -1,4 +1,4 @@
-let lives = 3;
+let lives = 5;
 const HB = document.getElementById('health');
 const HB2 = document.getElementById('health2');
 
@@ -24,6 +24,7 @@ function checkGuess() {
         messageElement.style.color = "green";
         //gameStatus.textContent="You have won the game!!";
         decreaseHealth2(20);
+
     } else {
         lives--;
         livesElement.textContent = lives;
@@ -32,7 +33,7 @@ function checkGuess() {
         gameStatus.textContent="You have been Shot!!";
         decreaseHealth(20);
 
-        if (HB.style.height < 0 +'px' || HB2.style.height < 0 + 'px') {
+        if (lives<=0) {
             messageElement.textContent = "Game Over!";
             gameStatus.textContent="You have been Killed";
 
@@ -44,8 +45,7 @@ function checkGuess() {
 }
 
 function resetGame() {
-    correctNumber = Math.floor(Math.random() * 10) + 1;
-    lives = 3;
+    lives = 5;
     document.getElementById('lives').textContent = lives;
     document.getElementById('guess-input').value = '';
     resetHealth();
