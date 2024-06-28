@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.ImageContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+.Title {
+    position: absolute;
+    top: 7%;    
+    left: 50%;    
+    transform: translate(-50%, -50%); 
+    width: 50%;     
+    height: auto;  
+    opacity: 1;
+}
+
+.Sky {
+    position: absolute;
+    top: 40%;    
+    left: 50%;    
+    transform: translate(-50%, -50%); 
+    width: 70%;     
+    height: auto;  
+    opacity: 1;
+}
+
+.Ground {
+    position: absolute;
+    top: 70%;    
+    left: 50%;    
+    transform: translate(-50%, -50%); 
+    width: 70%;     
+    height: 30%;  
+    opacity: 1;
+}
+
+.Space {
+    width: 100%;
+    height: auto;
+}
