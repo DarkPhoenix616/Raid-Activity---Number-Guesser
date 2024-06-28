@@ -36,6 +36,7 @@ function checkGuess() {
         if (lives<=0) {
             messageElement.textContent = "Game Over!";
             gameStatus.textContent="You have been Killed";
+            window.location.href = 'gameovermenu.html';
 
             resetGame();
         }
