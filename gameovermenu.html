@@ -15,7 +15,7 @@
       background-color: #f0f0f0;
     }
 
-   .menu {
+    .menu {
       text-align: center;
       background-color: white;
       padding: 20px;
@@ -28,13 +28,13 @@
       margin-bottom: 20px;
     }
 
-   .buttons a {
+    .buttons a {
       display: block;
       margin: 10px 0;
       text-decoration: none;
     }
 
-   .buttons button {
+    .buttons button {
       width: 150px;
       padding: 10px;
       font-size: 18px;
@@ -46,7 +46,7 @@
       transition: background-color 0.3s ease;
     }
 
-   .buttons button:hover {
+    .buttons button:hover {
       background-color: #0056b3;
     }
   </style>
@@ -54,9 +54,11 @@
 <body>
   <div class="menu">
     <h1>Game Over</h1>
+    <img src="public/space.jpg" alt="Game Over Image">
     <div class="buttons">
       <a href="main.html"><button>Replay</button></a>
       <a href="index.html"><button>Main Menu</button></a>
+      <a href="#" onclick="window.close()"><button>Quit</button></a>
     </div>
   </div>
 </body>
