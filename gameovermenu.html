@@ -17,28 +17,39 @@
 
     .menu {
       text-align: center;
-      background-color: white;
-      padding: 20px;
+      position: relative;
+      width: 80%;
+      max-width: 800px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: relative; 
+      overflow: hidden; 
     }
 
-    h1 {
+    .menu img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .menu h1 {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: 32px;
-      margin-bottom: 20px;
+      color: white;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     }
 
     .buttons {
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%); 
+      padding: 20px;
+      background-color: white;
     }
 
     .buttons a {
-      display: block;
-      margin: 10px 0;
+      display: inline-block;
+      margin: 10px;
       text-decoration: none;
     }
 
@@ -62,7 +73,7 @@
 <body>
   <div class="menu">
     <h1>Game Over</h1>
-    <img src="public/space.jpg" alt="Game Over Image" style="width: 100%; height: 100%; object-fit: cover;"> 
+    <img src="public/space.jpg" alt="Game Over Image">
     <div class="buttons">
       <a href="main.html"><button>Replay</button></a>
       <a href="index.html"><button>Main Menu</button></a>
