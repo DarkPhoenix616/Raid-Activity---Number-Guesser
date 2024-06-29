@@ -94,18 +94,21 @@ button:hover {
 .MainMenu {
     position: relative; 
     text-align: center;
+
     z-index: 100; 
 }    
 
 #StartGame {
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 30px;
     cursor: pointer;
-    background-color: #7a45a0;
-    color: white;
+    background-color: yellowgreen;
+    color: black;
     position: fixed;
     bottom: 190px;
-    right: 805px;
+    right: 620px;
+    width: 200px;
+    height: 50px;
 }
 
 #StartGame:hover {

@@ -1,18 +1,18 @@
 let currentHealth2 = 100;
-const maxHealth = 100;
+const maxHealth2 = 100;
 
 function updateHealthBar2() {
-    const healthPercentage = (currentHealth2 / maxHealth) * 100;
-    const healthBar = document.getElementById('health2');
+    const healthPercentage2 = (currentHealth2 / maxHealth2) * 100;
+    const healthBar2 = document.getElementById('health2');
 
-    healthBar.style.height = (healthPercentage) + '%';
+    healthBar2.style.height = (healthPercentage2) + '%';
 
-    if (healthPercentage < 30) {
-        healthBar.style.backgroundColor = 'red'; // Low health color
-    } else if (healthPercentage < 70) {
-        healthBar.style.backgroundColor = 'orange'; // Medium health color
+    if (healthPercentage2 < 30) {
+        healthBar2.style.backgroundColor = 'red'; // Low health color
+    } else if (healthPercentage2 < 70) {
+        healthBar2.style.backgroundColor = 'orange'; // Medium health color
     } else {
-        healthBar.style.backgroundColor = 'greenyellow'; // Full health color
+        healthBar2.style.backgroundColor = 'greenyellow'; // Full health color
     }
 }
 
