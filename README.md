@@ -32,6 +32,8 @@ GuessDodger is a simple number guessing game where you play as a shooter who mus
 5. The game continues until one player's lives reach zero.
 
 ## Screenshots
+<img width="1721" alt="game_screenshot" src="https://github.com/DarkPhoenix616/Raid-Activity---Number-Guesser/assets/154770478/618b93de-d8fb-4e97-b1e3-d13f109810f0">
+
 
 ## Lisence
 This project is licensed under the MIT License. See the LICENSE file for details.
