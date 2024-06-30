@@ -18,10 +18,10 @@ GuessDodger is a simple number guessing game where you play as a shooter who mus
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/guessdodger.git
+   https://github.com/DarkPhoenix616/Raid-Activity---Number-Guesser.git
 2. Navigate to the project directory:
    ```sh
-   cd guessdodger
+   cd Raid-Activity---Number-Guesser
 3. Open index.html in your browser to start the game.
 
 ## Usage
