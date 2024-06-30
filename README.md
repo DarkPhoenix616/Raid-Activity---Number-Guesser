@@ -7,7 +7,6 @@ GuessDodger is a simple number guessing game where you play as a shooter who mus
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -24,3 +23,18 @@ GuessDodger is a simple number guessing game where you play as a shooter who mus
    ```sh
    cd guessdodger
 3. Open index.html in your browser to start the game.
+
+##Usage
+1. Open index.html in a web browser.
+2. Click the "Start Game" button to begin.
+3. Enter your guess (a number between 1 and 10) in the input field and click the "Guess" button.
+4. If your guess is correct, your opponent loses health. If your guess is wrong, you lose health.
+5. The game continues until one player's lives reach zero.
+
+##Screenshots
+
+##Lisence
+
+Replace `yourusername` with your GitHub username, and ensure you have a screenshot named `game_screenshot.png` in the `public` directory. This entire block can be copied and pasted directly into your README file on GitHub.
+
+
